@@ -1,4 +1,4 @@
-import { Search, UserPlus, Star } from 'lucide-react';
+import { UserPlus, Star } from 'lucide-react';
 
 export default function TechniciansPage() {
   const techs = [
@@ -11,8 +11,8 @@ export default function TechniciansPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-black tracking-tight text-gray-900">Techniciens</h1>
-          <p className="text-sm text-gray-500 mt-1">Supervisez votre flotte d'opérateurs Klirô.</p>
+          <h1 className="text-3xl font-black tracking-tight text-gradient">Techniciens</h1>
+          <p className="text-sm text-gray-500 mt-1">Supervisez votre flotte d&apos;opérateurs Klirô.</p>
         </div>
         <button className="bg-[#0D4A2A] text-white px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2 hover:bg-[#0a3620]">
           <UserPlus size={16} />

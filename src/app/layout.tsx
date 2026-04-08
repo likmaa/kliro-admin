@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const rightGrotesk = localFont({
+  src: "../../public/fonts/RightGrotesk-Medium.otf",
+  variable: "--font-right-grotesk",
+});
 
 export const metadata: Metadata = {
   title: "Klirô Admin",
@@ -17,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className={`${inter.className} bg-[#F5F5F5] min-h-screen text-[#0a0a0a]`}>
+    <html lang="fr" className={rightGrotesk.variable}>
+      <body className="min-h-screen font-sans">
         <Sidebar />
         <div className="ml-64 flex flex-col min-h-screen">
           <Header />
